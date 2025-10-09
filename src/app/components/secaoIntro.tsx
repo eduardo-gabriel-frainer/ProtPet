@@ -2,7 +2,7 @@ export default function secaoIntro() {
     return(
     <div className="min-h-screen bg-[#FF862F] flex items-center justify-between px-40">
         <div className="text-white text-8xl align-items font-semibold">
-          <img src="/osso.png" className="w-40 h-auto" />
+          <img src="/osso.png" className="w-40 h-auto hover:scale-110 duration-300" />
           <div>" A voz que</div>
           <div>protege quem</div>
           <div>não pode falar. "</div>
