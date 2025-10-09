@@ -9,6 +9,7 @@ export default function Home() {
       <SecaoIntro/>
       <SecaoSobreNos/>
       <SecaoCarousel/>
+      <Footer/>
     </div>
   );
 }

@@ -1,21 +1,27 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
-    <header className="bg-[#FF862F] text-white px-40 pt-8 flex items-center justify-between">
+    <header className="bg-[#FF862F] text-white px-40 py-8 flex items-center justify-between">
       
-        <div className="cursor-pointer text-3xl font-bold hover:scale-105 duration-300">
+
+        <Link href="\" className="cursor-pointer text-3xl font-bold hover:scale-105 duration-300">
             ProtPet
-        </div>
+        </Link>
+ 
 
         <div className="flex space-x-8 text-xl">
-            <h2 className="cursor-pointer hover:scale-105 duration-300">
+            <Link href="\denuncias" className="cursor-pointer hover:scale-105 duration-300">
                 Denuncias
-            </h2>
-            <h2 className="cursor-pointer hover:scale-105 duration-300">
-                Animais perdidos
-            </h2>
-            <h2 className="cursor-pointer hover:scale-105 duration-300">
+            </Link>
+
+            <Link href="\cadastroAnimais" className="cursor-pointer hover:scale-105 duration-300">
+             Animais perdidos
+            </Link>
+            
+            <Link href="\ongsProximas"  className="cursor-pointer hover:scale-105 duration-300">
                 Ongs próximas
-            </h2>
+            </Link>
         </div>
 
         <div className="flex space-x-8 text-lg">
