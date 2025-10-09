@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import Card from "./card";
-
-
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Carousel() {
   const pets = [
@@ -35,9 +34,9 @@ export default function Carousel() {
   return (
     <div className="relative flex items-center justify-center mt-10">
       {/* Botão esquerda */}
-      <button className="absolute left-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-6 text-3xl z-900"
+      <button className="absolute left-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900"
       onClick={voltar}>
-       
+        <FaArrowLeft size={20}/>
       </button>
 
       {/* Área dos cards */}
@@ -53,9 +52,9 @@ export default function Carousel() {
       </div>
 
       {/* Botão direita */}
-      <button className="absolute right-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-6 text-3xl z-900"
+      <button className="absolute right-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900"
       onClick={avancar}>
-          
+          <FaArrowRight size={20}/>
       </button>
     </div>
   );
