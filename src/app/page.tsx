@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Carousel from "./components/carousel";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -43,12 +45,15 @@ export default function Home() {
       {/* Terceiro Setor Carousel */}
 
       <div className="min-h-screen bg-[#fff4e5]">
-        <div className="text-[#FF862F] text-6xl text-center pt-20 font-semibold">
+        <div className="text-[#FF862F] text-6xl text-center pt-40 pb-15 font-semibold">
           Animais Perdidos ou Encontrados
         </div>
+         <Carousel />
       </div>
 
-       <div className="min-h-screen bg-[#FF862F] text-6xl">
+      {/* Footer */}
+      <div>
+        <Footer/>
       </div>
 
     </div>
