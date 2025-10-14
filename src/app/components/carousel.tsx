@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "./card";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -10,20 +10,38 @@ export default function Carousel() {
     { id: 3, especie: "Calopsita", status: "Encontrado", image: "/imagesCarousel/3.png" },
     { id: 4, especie: "Gato", status: "Perdido", image: "/imagesCarousel/4.png" },
     { id: 5, especie: "Cabra", status: "Perdido", image: "/imagesCarousel/5.png" },
-    { id: 4, especie: "Gato", status: "Perdido", image: "/imagesCarousel/6.png" },
-    { id: 5, especie: "Cabra", status: "Perdido", image: "/imagesCarousel/7.png" },
-
-    { id: 5, especie: "", status: "Ver mais!!!", image: "/imagesCarousel/vermais.png" },
+    { id: 6, especie: "Gato", status: "Perdido", image: "/imagesCarousel/6.png" },
+    { id: 7, especie: "Cabra", status: "Perdido", image: "/imagesCarousel/7.png" },
+    { id: 8, especie: "", status: "Ver mais!!!", image: "/imagesCarousel/vermais.png" },
   ];
 
   const [index, setIndex] = useState(0);
+  const [cardsVisiveis, setCardsVisiveis] = useState(4);
+  const [cardWidth] = useState(320);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1000) {
+        setCardsVisiveis(1)
+      } else if (window.innerWidth < 1400) {
+        setCardsVisiveis(2);
+      } else if (window.innerWidth < 1780) {
+        setCardsVisiveis(3);
+      } else {
+        setCardsVisiveis(4);
+      }
+    };
 
-   const avancar = () => {
-        if (index < pets.length - 4) {
-            setIndex(index + 1)
-        }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const avancar = () => {
+    if (index < pets.length - cardsVisiveis) {
+      setIndex(index + 1);
     }
+  };
 
   const voltar = () => {
     if (index > 0) {
@@ -40,18 +58,23 @@ export default function Carousel() {
       </button>
 
       {/* Área dos cards */}
-      <div className="flex overflow-hidden h-100 pl-5 pt-5 w-[1330px]">
+      <div
+        className="overflow-hidden transition-all duration-300"
+        style={{
+          width: `${cardsVisiveis * cardWidth}px`,
+        }}
+      >
         <div    
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${index * 335}px)` }}
         >
-          {pets.map((pet) => (
+           {pets.map((pet) => (
             <Card key={pet.id} pet={pet} />
           ))}
         </div>
       </div>
 
-      {/* Botão direita */}
+        {/* Botão direita */}
       <button className="absolute right-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900"
       onClick={avancar}>
           <FaArrowRight size={20}/>
