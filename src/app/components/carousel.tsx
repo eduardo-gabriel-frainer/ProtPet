@@ -74,7 +74,7 @@ export default function Carousel() {
         </div>
       </div>
 
-        {/* Botão direita */}
+      {/* Botão direita */}
       <button className="absolute right-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900"
       onClick={avancar}>
           <FaArrowRight size={20}/>
