@@ -13,5 +13,6 @@ export default function Card({ pet }) {
       <h2 className="text-white text-left ml-5 mt-5 text-2xl font-medium">{pet.especie}</h2>
       <h2 className="text-white text-left ml-5 text-2xl -mt-1">{pet.status}</h2>
     </div>
+    
   );
 }

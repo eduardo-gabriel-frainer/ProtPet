@@ -12,5 +12,6 @@ export default function cadastroAnimais() {
             </div>
         <Footer/>
         </div>
+        
     )
 }
