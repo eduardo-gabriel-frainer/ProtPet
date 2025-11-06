@@ -2,7 +2,7 @@ import Footer from "../components/footer";
 
 export default function CadastroAnimais() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-amber-50">
       {/* Container principal com texto e formulário */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-50 flex-1 px-6 py-12 md:px-16 lg:px-32 min-h-screen">
 
@@ -20,7 +20,7 @@ export default function CadastroAnimais() {
         </div>
 
         {/* Formulário à direita */}
-        <form className="flex flex-col w-full max-w-xl gap-3 text-gray-700 bg-white">
+        <form className="flex flex-col w-full max-w-xl gap-3 text-gray-700 bg-white p-10 rounded-2xl shadow-2xl">
           <label className="font-semibold">O animal está:</label>
           <select className="border p-2 rounded">
             <option value="">Selecione</option>
