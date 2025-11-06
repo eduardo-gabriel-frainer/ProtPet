@@ -1,24 +1,32 @@
-export default function secaoIntro() {
-    return(
-        <div className="min-h-screen bg-[#fff4e5] flex items-center justify-between px-40"> 
-          <div className="text-white text-6xl align-items">
-           <img src="/cachorroSobreNos.png" className="w-210 h-auto mt-20" />
-          </div>
+export default function SecaoIntro() {
+  return (
+    <div className="min-h-screen bg-[#fff4e5] flex items-center justify-center px-20 py-20">
+      <div className="flex items-center gap-16 max-w-7xl">
 
-          <div className="align-items font-medium">
-          <div className="text-[#FF862F] text-6xl">
-            <div>Sobre o</div>
-            <div>nosso projeto</div>
-          </div>
+        <img src="/cachorroSobreNos.png" className="w-[650px] h-auto" alt="Cachorro feliz" />
 
-          <div className="max-w-xl break-words mt-10 text-2xl leading-snug mr-10">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio soluta laudantium dolor qui aperiam sapiente sit amet
-            consectetur adipisicing elit. Optio soluta laudantium dolor qui aperiam sapient mollitia! Repellat aspernatur illum ullam
-             neque, dolorem hic soluta id, enim magnam, voluptatum earum assumenda!
+        <div className="font-medium">
+          <h2 className="text-[#FF862F] text-5xl font-semibold mb-6">
+            Sobre o nosso projeto
+          </h2>
+
+          <p className="text-[#1e293b] text-lg leading-relaxed max-w-xl mb-8">
+            Em Inglaterra, o uso do chip é sempre e obrigatório e este viabilizou uma robusta rede
+            de abrigos europeus, regulando e reduzindo o número de cães não-identificados. Os animais
+            têm acesso a um microchip implantado que auxilia na sua identificação e permite que eles
+            sejam rastreados em casos de perda ou abandono.
+          </p>
+
+          <div className="flex gap-4">
+            <button className="bg-[#FF862F] text-white text-lg px-6 py-3 rounded-full hover:bg-[#ff7e22] transition-all duration-200">
+              Saiba Mais
+            </button>
+            <button className="bg-[#FFD0A6] text-[#FF862F] text-lg px-6 py-3 rounded-full hover:bg-[#ffb977] transition-all duration-200">
+              Aderir ao Projeto
+            </button>
           </div>
-          <button className="bg-[#FF862F] px-5 py-3 text-white text-xl rounded-3xl mt-8 ml-2 hover:bg-[#ff7e22] hover:scale-103 duration-200">Denunciar</button>
-          <button className="bg-[#FF862F] px-5 py-3 text-white text-xl rounded-3xl mt-8 ml-8 hover:bg-[#ff7e22] hover:scale-103 duration-200">Animais Perdidos</button>
         </div>
       </div>
-    )
+    </div>
+  )
 }

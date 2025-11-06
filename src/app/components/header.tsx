@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-[#FF862F] text-white px-40 py-8 flex items-center justify-between">
+    <header className="bg-[#FF862F] text-white px-50 py-6 flex items-center justify-between sticky top-0 z-50 shadow-lg">
 
         <Link href="\" className="cursor-pointer text-3xl font-bold hover:scale-105 duration-300">
             ProtPet
