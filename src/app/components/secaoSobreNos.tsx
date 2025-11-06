@@ -18,7 +18,7 @@ export default function SecaoIntro() {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-[#FF862F] text-white text-lg px-6 py-3 rounded-full hover:bg-[#ff7e22] transition-all duration-200">
+            <button className="bg-[#FF8142] text-white text-lg px-6 py-3 rounded-full hover:bg-[#ff7e22] transition-all duration-200">
               Saiba Mais
             </button>
             <button className="bg-[#FFD0A6] text-[#FF862F] text-lg px-6 py-3 rounded-full hover:bg-[#ffb977] transition-all duration-200">

@@ -68,7 +68,7 @@
     return (
       <div className="relative flex items-center justify-center mt-10">
         {/* Botão esquerda */}
-        <button className={`absolute left-30 bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900 ${primeiro ? 'hidden' : ''}`}
+        <button className={`absolute left-30 bg-[#FF8142] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900 ${primeiro ? 'hidden' : ''}`}
         onClick={voltar}>
           <FaArrowLeft size={20}/>
         </button>
@@ -91,7 +91,7 @@
         </div>
 
         {/* Botão direita */}
-        <button className={`absolute right-30  ${ultimo ? "hidden" : ""} bg-[#FF862F] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900`}
+        <button className={`absolute right-30  ${ultimo ? "hidden" : ""} bg-[#FF8142] text-white rounded-full hover:bg-[#ff730e] p-3 text-3xl z-900`}
         onClick={avancar}>
             <FaArrowRight size={20}/>
         </button>
