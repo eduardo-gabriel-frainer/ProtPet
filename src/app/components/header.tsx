@@ -6,7 +6,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#FF862F] text-white px-50 py-6 flex items-center justify-between sticky top-0 z-50 shadow-lg">
+    <header className="bg-[#FF8142] text-white px-50 py-6 flex items-center justify-between sticky top-0 z-50 shadow-lg">
 
         <Link href="\" className="cursor-pointer text-3xl font-bold hover:scale-105 duration-300">
             ProtPet

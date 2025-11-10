@@ -40,7 +40,7 @@ export default function CadastroAnimais() {
 
           <button
             type="submit"
-            className="mt-4 bg-[#FF862F] hover:bg-[#ff730e] text-white font-semibold py-2 rounded-lg"
+            className="mt-4 bg-[#FF8142] hover:bg-[#ff730e] text-white font-semibold py-2 rounded-lg"
           >
             Enviar
           </button>
