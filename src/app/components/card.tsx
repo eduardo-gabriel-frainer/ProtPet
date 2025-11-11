@@ -1,6 +1,6 @@
 export default function Card({ pet }) {
   return (
-    <div className="bg-[#FF862F] rounded-2xl h-90 w-72 mr-10 text-center">
+    <div className="bg-[#FF8142] rounded-2xl h-90 w-72 mr-10 text-center">
       {/* Foto */}
       <div className="bg-white h-65 w-72 overflow-hidden rounded-t-2xl">
         <img
