@@ -26,6 +26,7 @@ export default function CadastroAnimais() {
             <option value="">Selecione</option>
             <option value="perdido">Perdido</option>
             <option value="encontrado">Encontrado</option>
+            <option value="encontrado">Para adoção</option>
           </select>
         
           <label className="font-semibold">Localização:</label>
