@@ -25,7 +25,14 @@ export default function Header() {
           href="/cadastroAnimais"
           className="cursor-pointer hover:scale-105 duration-300"
         >
-          Animais Perdidos
+          Cadastro de animais
+        </Link>
+
+        <Link
+          href="/todosAnimais"
+          className="cursor-pointer hover:scale-105 duration-300"
+        >
+          Todos os animais
         </Link>
 
         <Link
@@ -68,7 +75,7 @@ export default function Header() {
             className="hover:scale-105 duration-300"
             onClick={() => setMenuOpen(false)}
           >
-            Animais Perdidos
+            Cadastro de Animais
           </Link>
 
           <Link

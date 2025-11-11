@@ -4,7 +4,7 @@ import { MapPin, Shield, TriangleAlert } from 'lucide-react';
 export default function cadastroAnimais() {
     return (
         <div>
-            <div className="min-h-screen bg-amber-50">
+            <div className="min-h-screen bg-amber-50 pb-25">
                 <div className="text-center pt-25">
                     <h2 className="text-orange-600 text-4xl flex justify-center gap-3">
                         <TriangleAlert size={42} className="text-orange-600" />
@@ -15,7 +15,7 @@ export default function cadastroAnimais() {
                 </div>
 
                 <div className="mx-auto mt-10 bg-white w-[55vw] p-8 rounded-2xl shadow-2xl">
-                    <form className="flex flex-col w-full gap-5 text-gray-400">
+                    <form className="flex flex-col w-full gap-5 text-gray-500">
 
                         <div className="flex gap-4">
                             <div className="flex flex-col flex-1">
@@ -54,8 +54,8 @@ export default function cadastroAnimais() {
                                 className="w-full h-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
-                        <label className="-mb-2">Endereço ou Referências Locais</label>
-                        <textarea placeholder="Ex: Rua das Flores" className="border p-2 rounded w-full focus:border-[#FF862F] focus:outline-none" />
+                        <label className="-mb-2">Complemento</label>
+                        <textarea placeholder="Ex: Em frente ao Senai, Casa" className="border p-2 rounded w-full focus:border-[#FF862F] focus:outline-none" />
 
                         <label className="-mb-2">Descrição Detalhada do Ocorrido</label>
                         <textarea placeholder="Descreva em detalhes o que você presenciou ou tem conhecimento. Inclua informações como: número de animais envolvidos, condições em que se encontram, identificação do responsável (se conhecer), etc."
